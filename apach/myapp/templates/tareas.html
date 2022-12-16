@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<h1>Aquí encontrará una lista de los eventos</h1>
+
+{% for mitarea in mistareas %}
+
+<article>
+    <h1>Evento: {{mitarea.descripcion}} - {{mitarea.lugar}} - {{mitarea.fecha}} - Veterinario: {{mitarea.responsable.nombre}}, {{mitarea.responsable.apellido}}</h1>
+</article>
+
+{% endfor %}
+
+{% endblock %}
+

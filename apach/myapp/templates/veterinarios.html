@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+
+<h1>Aquí encontrará una lista de los veterinarios</h1>
+
+{% for veterinario in misveterinarios %}
+
+<article>
+    <h1>{{veterinario.nombre}} {{veterinario.apellido}}</h1>
+</article>
+
+{% endfor %}
+
+{% endblock %}
+
