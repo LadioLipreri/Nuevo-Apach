@@ -1,5 +1,7 @@
 {% extends 'layouts/base.html' %}
 
+{% load static %} <!-- le aviso que voy a cargar imagenes-->
+
 {% block content %}
 
 <!DOCTYPE html>
@@ -8,14 +10,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- <link rel="shortcut icon" href="apach\static\img\logo.png" type="image/x-icon">-->
+    <!-- apach\myapp\static\img\favicon.ico -->
     <title>Apach Charata</title>
 </head>
 <body>
+    <img src="{% static 'Mascotas.png' %}" alt="" width="600">
     <h1>Bienvenidos a Apach</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, qui ut laborum dolore, vitae necessitatibus quisquam nostrum architecto est quod sint! Aliquid cum nihil possimus totam inventore sequi exercitationem suscipit.
+        
     </p>  
+
 </body>
 </html>
 

@@ -1,20 +1,35 @@
-<nav>
-    <ul>
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/Veterinarios">Veterinarios</a>
-        </li>
-        <li>
-            <a href="/Tareas">Eventos</a>
-        </li>
-        <li>
-            <a href="/Donar">Donar</a>
-        </li>
-    </ul>
-</nav>
+{% load static %} <!-- le aviso que voy a cargar imagenes o estilos css-->
 
-{% block content %}
-
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apach Charata</title>
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}">
+</head>
+<body>
+    <img src="{% static 'logo.png' %}" alt="" width="80">
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/Veterinarios">Veterinarios</a>
+            </li>
+            <li>
+                <a href="/Tareas">Eventos</a>
+            </li>
+            <li>
+                <a href="/Donar">Donar</a>
+            </li>
+        </ul>
+    </nav>
+    
+    {% block content %}
+    
+    {% endblock %}
+</body>
+</html>
