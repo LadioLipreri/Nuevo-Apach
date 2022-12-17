@@ -10,7 +10,6 @@ body{
 }
 
 .navbar{  /* Incluye a todos los ítems del menú */
-    background: #474647;
     padding: 15px 25px;
 
 }
@@ -23,9 +22,10 @@ body{
 } 
 
 .navbar ul li a{
-    color: #fff;
-    text-decoration: none;
+    color: #7a7280;
+    text-decoration: underline;
     margin: 30px; /* separaciones entre los items del menú */
+    font-size: 22px;
     
 }
 
@@ -88,3 +88,6 @@ section footer{
     /*margin: 10px;*/
     }
 
+.logo_abajo{
+    padding: 4px 4px 4px 4px;
+}
