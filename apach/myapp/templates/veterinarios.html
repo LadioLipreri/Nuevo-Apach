@@ -1,18 +1,16 @@
 {% extends 'layouts/base.html' %}
 
+{% block titulo %}VETERINARIOS{% endblock titulo %}
+
 {% block content %}
+<div class="estilo_vet">
+    <h1>VETERINARIOS EN CHARATA</h1>
+    <p>Al hacer click en las patitas rojas puede ver toda la información sobre las distintas veterinarias.</p>
+    <div style="padding: 60px 120px 120px 180px;"> 
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bC8aGlJIRjV_x7czB9nPSSQFBCd87v0&ehbc=2E312F" width="80%" height="620"></iframe>
+    </div>
+</div>
 
-<h1>Aquí encontrará una lista de los veterinarios</h1>
-
-<h2>Estos emojis solo se deben ver en rama developer '&#x1F9AE;' '&#x1F63D;'</h2>
-
-{% for veterinario in misveterinarios %}
-
-<article>
-    <h1>{{veterinario.nombre}} {{veterinario.apellido}}</h1>
-</article>
-
-{% endfor %}
 
 {% endblock %}
 
