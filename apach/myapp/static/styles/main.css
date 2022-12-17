@@ -1,24 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
 body{
-    background: #f9c6ae;
-    color: #968c9c;
+    background: #e6e5d1;
 }
 
-.navbar {
+.navbar{  /* Incluye a todos los ítems del menú */
     background: #474647;
-    padding: 10px 15px;
+    padding: 15px 25px;
+
 }
 
-.navbar ul {
+.navbar ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
-}
 
-.navbar ul li a {
+} 
+
+.navbar ul li a{
     color: #fff;
     text-decoration: none;
+    margin: 30px; /* separaciones entre los items del menú */
+    
 }
 
 .navbar ul li a:hover{
     color: aquamarine;
+}
+
+.header{/* Contiene todo: logo, titulo, navegacion, botón buscar */
+    background: #f9c6ae;
+    padding: 20px; /* Alto 20px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);    
+
+}
+
+.titulo{/* El texto que dice Apach Charata */
+    font-size: 320; /* No realiza cambios */
+    color: #968c9c;
+    text-align: right;
+}
+
+.header .btn button{
+    color: white;
+    background: #474647;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s ease 0s;
+}
+
+.header .btn button:hover{
+    transform: scale(1.1);
+}
+
+.textoHome{
+    padding: 50px 860px 50px 100px;
+    color: #746458;
+}
+
+.logo{
+    padding-left: 80px;
+    width: 10px;
 }

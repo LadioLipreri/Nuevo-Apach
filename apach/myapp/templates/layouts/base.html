@@ -11,23 +11,35 @@
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
 </head>
 <body>
-    <img src="{% static 'logo.png' %}" alt="" width="80">
-    <nav class="navbar">
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/Veterinarios">Veterinarios</a>
-            </li>
-            <li>
-                <a href="/Tareas">Eventos</a>
-            </li>
-            <li>
-                <a href="/Donar">Donar</a>
-            </li>
-        </ul>
-    </nav>
+    <header class="header">
+
+        <div class="logo">
+            <img src="{% static 'logo.png' %}" alt="" width="80">
+        </div>
+
+        <h1 class="titulo">Apach Charata</h1>        
+
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/Veterinarios">Veterinarios</a>
+                </li>
+                <li>
+                    <a href="/Tareas">Eventos</a>
+                </li>
+                <li>
+                    <a href="/Donar">Donar</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="#" class="btn"><button>Buscar</button></a>   
+
+    </header>
+
     
     {% block content %}
     
