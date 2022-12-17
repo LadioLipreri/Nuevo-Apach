@@ -58,6 +58,11 @@ body{
     text-align: right;
 }
 
+.titulo a{
+    color: #968c9c;
+    text-decoration: none;
+}
+
 .header .btn button{
     color: white;
     background: #474647;
