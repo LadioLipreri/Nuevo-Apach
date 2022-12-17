@@ -6,7 +6,7 @@
 }
 
 body{
-    background: #e6e5d1;
+    background-color: rgb(248, 246, 200);
 }
 
 .navbar{  /* Incluye a todos los ítems del menú */
@@ -34,8 +34,8 @@ body{
 }
 
 .header{/* Contiene todo: logo, titulo, navegacion, botón buscar */
-    background: #f9c6ae;
-    padding: 20px; /* Alto 20px */
+    background: hsl(44, 100%, 50%);
+    padding: 30px; /* Alto 20px */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,3 +81,10 @@ body{
     padding-left: 80px;
     width: 10px;
 }
+
+section footer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    /*margin: 10px;*/
+    }
+
