@@ -1,5 +1,6 @@
-{% extends 'layouts/base.html' %}
 
+{% extends 'layouts/base.html' %}
+{% load static %} <!-- le aviso que voy a cargar imagenes o estilos css-->
 {% block content %}
 <div class="fondoDonar">
 <h2>Porque Donar?</h2>
@@ -29,9 +30,8 @@
             
             
             <body>  
-              
               <!-- formulario de contacto en html y css -->  
-            
+ 
               <div class="contact_form">
             
                 <div class="formulario">      
@@ -82,8 +82,12 @@
                             <p class="aviso">
                               <span class="obligatorio"> * </span>los campos son obligatorios.
                             </p>          
-                        
+                     
                       </form>
+                      <div class="logo">
+                        <img src="{% static 'fondo-donar-transparente.png' %}" alt="" width="500" height="500">
+                      </div> 
+
                 </div>  
               </div>
             
