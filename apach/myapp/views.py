@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from .models import veterinarios, tareas
-
+from django.contrib.auth.forms import UserCreationForm
 def index(request):
     return render(request, 'index.html')
 
@@ -13,6 +13,11 @@ def Hello(request):
 
 def About(request):
     return HttpResponse("<h1>About</h1>")
+
+def Registrarse(request):
+    return render(request, "signup.html",{
+        'form':UserCreationForm
+    })
 
 def Veterinary(request):#el nombre de la vista y del modelo no deben ser iguales
     #misveterinarios = list(veterinarios.objects.values())
