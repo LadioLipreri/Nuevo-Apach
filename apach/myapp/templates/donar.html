@@ -1,7 +1,99 @@
+
 {% extends 'layouts/base.html' %}
-
+{% load static %} <!-- le aviso que voy a cargar imagenes o estilos css-->
 {% block content %}
+<div class="fondoDonar">
+<h2>Porque Donar?</h2>
+    <div class="textoDonar">   
+        <p>
+            Nuestro cantidad y calidad de trabajo depende en un 100% de las donaciones que podamos recibir. 
+            Necesitamos tu ayuda para solventar el enorme costo ya que no poseemos ayuda del estado ni de empresas privadas. 
+            Gracias a tu aporte logramos seguir con nuestras tareas, para lograr un futuro libre de maltrato y abandono animal. 
+            Ayudanos a seguir ayudándolos con el monto que puedas y quieras, no hay montos estipulados ni tiempo de permanencia. 
+            Gracias por permitirnos seguir trabajando por ellos.
+        </p>
+    </div>
+        
+        
+        <div class="textoDonar">
+        <html lang="es">
+            <head>
+              <meta charset="UTF-8">
+              <p><h2>Como hacerlo?</h2> </p>
+              <title>Formulario de contacto</title>
+            
+              <!-- Enlace al documento css. no aplicable en codepen.
+              <link rel="stylesheet" type="text/css" href="contact-form.css">
+            -->
+              
+              </head>
+            
+            
+            <body>  
+              <!-- formulario de contacto en html y css -->  
+ 
+              <div class="contact_form">
+            
+                <div class="formulario">      
+                  
+                  <h2>Formulario de contacto</h2>
+                    <h4>Escríbenos y en breve los pondremos en contacto</h4>
+            
+            
+                      <form action="submeter-formulario.php" method="post">       
+            
+                        
+                            <p>
+                              <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                            </p>
+                          
+                            <p>
+                              <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                            </p>
+                        
+                            <p>
+                              <label for="telefone" class="colocar_telefono">Teléfono
+                              </label>
+                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                            </p>                                                          
+                          
+                            <p>
+                              <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                              </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                            </p>    
+                          
+                            <p>
+                              <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                              </label>                     
+                                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                            </p>                    
+                          
+                            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+            
+                            <p class="aviso">
+                              <span class="obligatorio"> * </span>los campos son obligatorios.
+                            </p>          
+                     
+                      </form>
+                      <div class="logo">
+                        <img src="{% static 'fondo-donar-transparente.png' %}" alt="" width="500" height="500">
+                      </div> 
 
-<h1>Aquí puede realizar una donación</h1>
+                </div>  
+              </div>
+            
+            </body>
+            </html>
+        </div>
+    </div>
 
 {% endblock %}

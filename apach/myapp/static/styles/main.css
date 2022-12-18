@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: rgb(248, 246, 200);
+    
+    
+}
+
+.navbar{  /* Incluye a todos los ítems del menú */
+    padding: 15px 25px;
+
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+} 
+
+.navbar ul li a{
+    color: #7a7280;
+    text-decoration: underline;
+    margin: 30px; /* separaciones entre los items del menú */
+    font-size: 22px;
+    
+}
+
+.navbar ul li a:hover{
+    color: aquamarine;
+}
+
+.header{/* Contiene todo: logo, titulo, navegacion, botón buscar */
+    background: hsl(44, 100%, 50%);
+    padding: 30px; /* Alto 20px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);    
+
+}
+
+.titulo{/* El texto que dice Apach Charata */
+    font-size: 320; /* No realiza cambios */
+    color: #968c9c;
+    text-align: right;
+}
+
+.titulo a{
+    color: #968c9c;
+    text-decoration: none;
+}
+
+.header .btn button{
+    color: white;
+    background: #474647;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s ease 0s;
+}
+
+.header .btn button:hover{
+    transform: scale(1.1);
+}
+
+.textoHome{
+    padding: 50px 860px 50px 100px;
+    color: #746458;
+}
+/*
+.fondoDonar{
+    background-image: url("https://st2.depositphotos.com/1177973/6092/i/600/depositphotos_60922217-stock-photo-collage-of-dogs-and-cats.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+*/
+.textoDonar{   
+    padding: 50px 300px 50px 100px;
+    color: #533c2b;
+}
+
+.logo{
+    padding-left: 80px;
+    width: 10px;
+}
+
+section footer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    /*margin: 10px;*/
+    }
+
+.logo_abajo{
+    padding: 4px 4px 4px 4px;
+}
+
+.imagen_mascotas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.estilo_vet{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.estilo_vet h1{
+    text-decoration: underline;
+}
+
+.estilo_vet p{
+    padding: 20px;
+    font-size: 25px;
+}
