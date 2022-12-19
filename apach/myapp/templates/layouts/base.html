@@ -34,9 +34,15 @@
                 <li>
                     <a href="/Donar">Donar</a>
                 </li>
+                {% if user.is_authenticated %}
+                <li>
+                    <a href="/logout">Cerrar seción</a>
+                </li>
+                {% else %}
                 <li>
                     <a href="/signup">Registrarse</a>
-                </li>
+                </li>                
+                {% endif %}
                 <form class="d-flex" role="search">
 					<input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
 					<button class="btn btn-dark">
