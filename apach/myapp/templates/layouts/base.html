@@ -36,12 +36,15 @@
                 </li>
                 {% if user.is_authenticated %}
                 <li>
-                    <a href="/logout">Cerrar seción</a>
+                    <a href="/logout">Cerrar sesión</a>
                 </li>
                 {% else %}
                 <li>
                     <a href="/signup">Registrarse</a>
-                </li>                
+                </li>
+                <li>
+                    <a href="/signin">Iniciar Sesión</a>
+                </li>                  
                 {% endif %}
                 <form class="d-flex" role="search">
 					<input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
