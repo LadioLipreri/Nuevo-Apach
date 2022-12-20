@@ -82,6 +82,8 @@ body{
 .textoHome{
     padding: 50px 860px 50px 100px;
     color: #746458;
+    text-justify: none;
+
 }
 
 .fondoDonar{
@@ -93,6 +95,7 @@ body{
 .textoDonar{   
     padding: 50px 300px 50px 100px;
     color: #533c2b;
+    font-size: 20px;
 }
 
 .logo{

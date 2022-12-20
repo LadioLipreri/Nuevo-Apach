@@ -1,95 +1,100 @@
 {% extends 'layouts/base.html' %}
 
 {% block content %}
-<div class="fondoDonar">
-<h2>Porque Donar?</h2>
-    <div class="textoDonar">   
-        <p>
-            Nuestro cantidad y calidad de trabajo depende en un 100% de las donaciones que podamos recibir. 
-            Necesitamos tu ayuda para solventar el enorme costo ya que no poseemos ayuda del estado ni de empresas privadas. 
-            Gracias a tu aporte logramos seguir con nuestras tareas, para lograr un futuro libre de maltrato y abandono animal. 
-            Ayudanos a seguir ayudándolos con el monto que puedas y quieras, no hay montos estipulados ni tiempo de permanencia. 
-            Gracias por permitirnos seguir trabajando por ellos.
-        </p>
+<!--<div class="fondoDonar">-->
+
+<main class="card card-body">
+  <div class="row">
+        <div class="textoDonar "> 
+          <h2 class="text-center">Por qué donar?</h2>  
+            <p>
+                Nuestro cantidad y calidad de trabajo depende en un 100% de las donaciones que podamos recibir. 
+                Necesitamos tu ayuda para solventar el enorme costo ya que no poseemos ayuda del estado ni de empresas privadas. 
+                Gracias a tu aporte logramos seguir con nuestras tareas, para lograr un futuro libre de maltrato y abandono animal. 
+                Ayudanos a seguir ayudándolos con el monto que puedas y quieras, no hay montos estipulados ni tiempo de permanencia. 
+                Gracias por permitirnos seguir trabajando por ellos. &#x1F43E;
+            </p>
+        </div>
     </div>
-        
-        
+</main>        
+ 
+<main class="container">
+  <div class="row">
         <div class="textoDonar">
         <html lang="es">
             <head>
               <meta charset="UTF-8">
-              <p><h2>Como hacerlo?</h2> </p>
               <title>Formulario de contacto</title>
             
               <!-- Enlace al documento css. no aplicable en codepen.
               <link rel="stylesheet" type="text/css" href="contact-form.css">
             -->
-              
               </head>
             
-            
-            <body>  
-              
+                            
               <!-- formulario de contacto en html y css -->  
-            
-              <div class="contact_form">
-            
-                <div class="formulario">      
-                  
-                  <h2>Formulario de contacto</h2>
-                    <h4>Escríbenos y en breve los pondremos en contacto</h4>
-            
-            
-                      <form action="submeter-formulario.php" method="post">       
+            <body> 
+                      <form action="submeter-formulario.php" method="post" class="card card-body">     
+                        <div class="contacto">
+                          <div class="contact_form">
+                            <p><h2 class="text-center">Cómo hacerlo?</h2> </p>
+                        
+                            <div class="formulario">         
+                              <h3 class="text-center">Formulario de contacto</h3>
+                                <h4 class="text-center">Escríbenos y en breve los pondremos en contacto</h4>
+                          
             
                         
-                            <p>
+                            <p class="py-3">
                               <label for="nombre" class="colocar_nombre">Nombre
                                 <span class="obligatorio">*</span>
                               </label>
-                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre" class="form-control">
                             </p>
                           
-                            <p>
+                            <p class="py-3">
                               <label for="email" class="colocar_email">Email
                                 <span class="obligatorio">*</span>
                               </label>
-                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email" class="form-control">
                             </p>
                         
-                            <p>
+                            <p class="py-3">
                               <label for="telefone" class="colocar_telefono">Teléfono
                               </label>
-                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono" class="form-control">
                             </p>                                                          
                           
-                            <p>
+                            <p class="py-3">
                               <label for="asunto" class="colocar_asunto">Asunto
                                 <span class="obligatorio">*</span>
                               </label>
-                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto" class="form-control">
                             </p>    
                           
-                            <p>
-                              <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <p class="py-3">
+                              <label for="mensaje" class="colocar_mensaje" >Mensaje
                                 <span class="obligatorio">*</span>
                               </label>                     
-                                                <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                                <textarea name="introducir_mensaje" class="form-control id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..." ></textarea> 
                                             </p>                    
                           
-                            <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
-            
+
                             <p class="aviso">
                               <span class="obligatorio"> * </span>los campos son obligatorios.
-                            </p>          
-                        
+                            </p>
+                                      
+                            <button type="submit" name="enviar_formulario" id="enviar" class="btn btn-warning">Enviar</button>
+            
                       </form>
                 </div>  
               </div>
             
             </body>
-            </html>
-        </div>
+        </html>
     </div>
+</main>    
+             
+
 
 {% endblock %}
