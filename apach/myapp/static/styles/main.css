@@ -55,14 +55,15 @@ body{
 }
 
 .titulo{/* El texto que dice Apach Charata */
-    font-size: 320; /* No realiza cambios */
     color: #968c9c;
     text-align: right;
+
 }
 
 .titulo a{
     color: #968c9c;
     text-decoration: none;
+    padding-left: 300px;
 }
 
 .header .btn button{
