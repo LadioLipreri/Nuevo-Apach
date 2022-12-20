@@ -85,4 +85,5 @@ def signin(request):
 
 
     
-    
+def Noticias(request):
+    return render(request, 'noticias.html')
