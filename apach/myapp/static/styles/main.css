@@ -95,6 +95,7 @@ body{
 .textoDonar{   
     padding: 50px 300px 50px 100px;
     color: #533c2b;
+    font-size: 20px;
 }
 
 .logo{
@@ -133,6 +134,4 @@ section footer{
     padding: 20px;
     font-size: 25px;
 }
-
-
 
