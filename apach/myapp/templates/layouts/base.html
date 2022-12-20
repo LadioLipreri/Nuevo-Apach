@@ -22,28 +22,28 @@
 
         <nav class="navbar">
             <ul>
-                <li>
-                    <a href="/">Home</a>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
                 </li>
-                <li>
-                    <a href="/Veterinarios">Veterinarios</a>
+                <li class="nav-item">
+                    <a href="/Veterinarios" class="nav-link">Veterinarios</a>
                 </li>
-                <li>
-                    <a href="/Tareas">Eventos</a>
+                <li class="nav-item">
+                    <a href="/Tareas" class="nav-link">Eventos</a>
                 </li>
-                <li>
-                    <a href="/Donar">Donar</a>
+                <li class="nav-item">
+                    <a href="/Donar" class="nav-link">Donar</a>
                 </li>
                 {% if user.is_authenticated %}
-                <li>
-                    <a href="/logout">Cerrar sesión</a>
+                <li class="nav-item">
+                    <a href="/logout" class="nav-link">Cerrar sesión</a>
                 </li>
                 {% else %}
-                <li>
-                    <a href="/signup">Registrarse</a>
+                <li class="nav-item">
+                    <a href="/signup" class="nav-link">Registrarse</a>
                 </li>
-                <li>
-                    <a href="/signin">Iniciar Sesión</a>
+                <li class="nav-item">
+                    <a href="/signin" class="nav-link">Iniciar Sesión</a>
                 </li>                  
                 {% endif %}
                 <form class="d-flex" role="search">
