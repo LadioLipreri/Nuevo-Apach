@@ -10,10 +10,11 @@ class veterinarios(models.Model):
         return self.nombre + " " + self.apellido
 
 class tareas(models.Model):
-    descripcion = models.CharField(max_length=75)
+    titulo = models.CharField(max_length=75)
+    descripcion = models.TextField(blank=True)
     fecha = models.DateTimeField()
     lugar = models.CharField(max_length=75)
     responsable = models.ForeignKey(veterinarios, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.descripcion + " - " + self.lugar + " - " + str(self.fecha) + " - " + self.responsable.nombre + " - " + self.responsable.apellido
+        return self.titulo + ' - ' + self.descripcion + " - " + self.lugar + " - " + str(self.fecha) + " - " + self.responsable.nombre + " - " + self.responsable.apellido

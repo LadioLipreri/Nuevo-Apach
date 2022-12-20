@@ -6,11 +6,12 @@
 }
 
 body{
-    background: #e6e5d1;
+    background-color: rgb(248, 246, 200);
+    
+    
 }
 
 .navbar{  /* Incluye a todos los ítems del menú */
-    background: #474647;
     padding: 15px 25px;
 
 }
@@ -23,9 +24,10 @@ body{
 } 
 
 .navbar ul li a{
-    color: #fff;
-    text-decoration: none;
+    color: #7a7280;
+    text-decoration: underline;
     margin: 30px; /* separaciones entre los items del menú */
+    font-size: 22px;
     
 }
 
@@ -34,8 +36,8 @@ body{
 }
 
 .header{/* Contiene todo: logo, titulo, navegacion, botón buscar */
-    background: #f9c6ae;
-    padding: 20px; /* Alto 20px */
+    background: hsl(44, 100%, 50%);
+    padding: 30px; /* Alto 20px */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +60,11 @@ body{
     text-align: right;
 }
 
+.titulo a{
+    color: #968c9c;
+    text-decoration: none;
+}
+
 .header .btn button{
     color: white;
     background: #474647;
@@ -77,7 +84,51 @@ body{
     color: #746458;
 }
 
+.fondoDonar{
+    background-image: url("https://st2.depositphotos.com/1177973/6092/i/600/depositphotos_60922217-stock-photo-collage-of-dogs-and-cats.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.textoDonar{   
+    padding: 50px 300px 50px 100px;
+    color: #533c2b;
+}
+
 .logo{
     padding-left: 80px;
     width: 10px;
 }
+
+section footer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    /*margin: 10px;*/
+    }
+
+.logo_abajo{
+    padding: 4px 4px 4px 4px;
+}
+
+.imagen_mascotas{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.estilo_vet{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.estilo_vet h1{
+    text-decoration: underline;
+}
+
+.estilo_vet p{
+    padding: 20px;
+    font-size: 25px;
+}
+
