@@ -1,17 +1,27 @@
+
 {% extends 'layouts/base.html' %}
 
 {% block content %}
 
-<h1>Aquí encontrará una lista de los eventos</h1>
+<main class="conteiner">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h4 class="text-center display-7 py-5">Aquí encontrará una lista de los eventos de nuestra organización</h4>
+            
+            <ul class="list-group"></ul>
+                {% for mitarea in mistareas %}
+                    <a class="list-group-item">
+                            <strong> {{mitarea.titulo}}:</strong>
+                            <p> {{mitarea.fecha}}: {{mitarea.descripcion}} - Lugar: {{mitarea.lugar}}</p>   
+                            <p>Veterinario: {{mitarea.responsable.nombre}}, {{mitarea.responsable.apellido}} (Tel: {{mitarea.responsable.telefono}})</p>
+                    </a>
+                {% endfor %}
+        
+            </ul>
 
-{% for mitarea in mistareas %}
-
-<article>
-    <h1> {{mitarea.titulo}}:</h1>
-    <h1> {{mitarea.descripcion}} - {{mitarea.lugar}} - {{mitarea.fecha}} - Veterinario: {{mitarea.responsable.nombre}}, {{mitarea.responsable.apellido}}</h1>
-</article>
-
-{% endfor %}
+        </div>
+    </div>
+</main>
 
 
 {% endblock %}
