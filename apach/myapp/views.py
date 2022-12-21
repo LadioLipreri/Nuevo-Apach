@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
-from .models import veterinarios, tareas
+from .models import veterinarios, tareas, Categorias, Noticias
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
@@ -85,5 +85,8 @@ def signin(request):
 
 
     
-def Noticias(request):
-    return render(request, 'noticias.html')
+def News(request):
+    mis_noticias = Noticias.objects.all()
+    return render(request, "noticias.html", {
+        'mis_noticias': mis_noticias
+    })

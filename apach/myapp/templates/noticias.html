@@ -1,3 +1,9 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +17,31 @@
     <h1>Noticias</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-    <!--empiezan las noticias-->
+
+
+<div class="p_tareas">
+</div>
+
+<div class="estilo_eventos">
+    {% for minoticia in mis_noticias %}
+
+        <article>
+            <p> Categoria: {{minoticia.categoria}}</p>
+            <p> Titulo categoria: {{minoticia.categoria.title}}</p>
+            <p> Imagen categoria: {{minoticia.categoria.category_image}}</p>
+
+            <p> Noticia title: {{minoticia.title}}</p>
+            <p> Noticia title: {{minoticia.image}}</p>
+            <img src="{% static 'Noticia1.jpg' %}" alt="" width="450" height="250"> <!-- Cómo cargar la imagen que está guardada en: {{minoticia.image}}  -->
+            <p> Noticia title: {{minoticia.detail}}</p>
+            <p> Noticia title: {{minoticia.add_time}}</p>
+    </article>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}
 
 </body>
 </html>
