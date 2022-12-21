@@ -26,15 +26,15 @@
     {% for minoticia in mis_noticias %}
 
         <article>
-            <p> Categoria: {{minoticia.categoria}}</p>
+<!--             <p> Categoria: {{minoticia.categoria}}</p>
             <p> Titulo categoria: {{minoticia.categoria.title}}</p>
-            <p> Imagen categoria: {{minoticia.categoria.category_image}}</p>
+            <p> Imagen categoria: {{minoticia.categoria.category_image}}</p> -->
 
-            <p> Noticia title: {{minoticia.title}}</p>
-            <p> Noticia title: {{minoticia.image}}</p>
+            <h4>{{minoticia.title}}</h4>
+            <!-- <p> Noticia title: {{minoticia.image}}</p> -->
             <img src="{% static 'Noticia1.jpg' %}" alt="" width="450" height="250"> <!-- Cómo cargar la imagen que está guardada en: {{minoticia.image}}  -->
-            <p> Noticia detail: {{minoticia.detail}}</p>
-            <p> Noticia add_time: {{minoticia.add_time}}</p>
+            <p>{{minoticia.detail}}</p>
+            <p> Fecha: {{minoticia.add_time}}</p>
     </article>
 
     {% endfor %}
