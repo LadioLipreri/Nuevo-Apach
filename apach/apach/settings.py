@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-4)g7p*bfuydpy(22$*s=mzx8tp8ycz)=(m!(p1rogmr51!b_h@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['silvanasg00.pythonanywhere.com']
 
 
 # Application definition
@@ -76,10 +76,21 @@ WSGI_APPLICATION = 'apach.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+#}
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    'default' : {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'silvanasg00$default',
+        'USER': 'silvanasg00',
+        'PASSWORD': 'Benjiywanda26',
+        'HOST': 'silvanasg00.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
     }
 }
 
