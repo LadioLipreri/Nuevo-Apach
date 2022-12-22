@@ -1,4 +1,4 @@
-apturl==0.5.2
+
 asgiref==3.5.0
 bcrypt==3.2.0
 beautifulsoup4==4.10.0
